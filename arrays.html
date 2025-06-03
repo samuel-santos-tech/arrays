@@ -10,7 +10,7 @@
     <h2>Lista de Compras</h2>
     <label>item</label>
     <input type="text" id="item">
-    <button onclick="addItem">Enviar</button>
+    <button onclick="addItem()">Enviar</button>
     <p id="resposta"></p>
 
     <script>
@@ -19,7 +19,7 @@
         reposta.innerHTML = lista;
 
         function addItem() {
-            lista.push(intem.value);
+            lista.push(item.value);
             resposta.innerHTML = lista
         }
 
