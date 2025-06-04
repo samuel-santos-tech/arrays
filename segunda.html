@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Impressão</h2>
+    <button onclick="cancel()">Remover</button>
+    <p id="resposta"></p>
+    <p id="cancelado"></p>
+
+    <script>
+
+        let lista = ["doc1.pdf", "doc2.pdf", "relatorio.xls"];
+        resposta.innerHTML = lista;
+        function cancel() {
+            lista.pop()
+            resposta.innerHTML = lista;
+        }
+
+    </script>
+
+
+</body>
+</html>
