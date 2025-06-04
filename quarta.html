@@ -7,17 +7,18 @@
 </head>
 <body>
     <h2>Terceira</h2>
-    <button onclick="atenderPessoa()">atenderPessoa</button>
+    <input id="pedido">
+    <button onclick="addPedido()">adicionarPedido</button>
     <p id="resposta"></p>
-    <p id="atendida"></p>
+    
 
     <script>
 
-        let fila = ["Maria", "João", "Ana"]
+        let fila = ["Pedido 101", "Pedido 102", "Pedido 103"]
         resposta.innerHTML = fila;
         
-        function atenderPessoa() {
-           atendida.innerHTML =  fila.shift() + " foi atendida"
+        function addPedido() {
+            fila.unshift(pedido.value)
             resposta.innerHTML = fila;
         }
     </script>
